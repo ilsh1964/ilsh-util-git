@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/ilan/.vim'
+let g:netrw_dirhist_3='/home/ilan'
+let g:netrw_dirhist_2='/home/ilan/.config'
+let g:netrw_dirhist_1='/home/ilan'

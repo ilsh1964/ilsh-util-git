@@ -1,0 +1,26 @@
+# Version 1.4
+
+# Write line numbers
+set linenumbers
+
+# backup to FILENAME~
+# set backup
+
+# Indent new lines to the previous line’s indentation
+set autoindent
+
+# Do case sensitive searches by default
+set casesensitive
+
+# Remove shortcut lists at the bottom
+set nohelp
+
+# tab size
+set tabsize 4
+
+# Convert typed tabs to spaces.
+set tabstospaces
+
+# enable the mouse
+set mouse
+

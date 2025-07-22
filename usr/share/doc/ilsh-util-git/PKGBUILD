@@ -1,0 +1,22 @@
+# Maintainer: Ilan Shavit <ilan.shavit@gmail.com>
+pkgname=ilsh-util-git
+pkgver=1
+pkgrel=1
+pkgdesc="Config files for my common utils"
+arch=('any')
+url="https://github.com/ilsh1964/ilsh-util-git"
+license=('GPL3')
+makedepends=('git')
+source=("git+https://github.com/ilsh1964/ilsh-util-git.git")
+md5sums=('SKIP')
+
+package() {
+  cd "$srcdir/$pkgname"
+
+  # Clean up VCS metadata if present
+  rm -rf .git
+
+  # Install files into /etc/skel/ilsh-wm-git
+  install -d "$pkgdir"
+  cp -a . "$pkgdir"
+}
