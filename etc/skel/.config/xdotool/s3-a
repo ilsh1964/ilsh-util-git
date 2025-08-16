@@ -1,4 +1,0 @@
-#!/bin/bash
-sleep 0.1
-echo '_G.awful.tag.viewonly(_G.awful.screen.focused().tags[3])' | awesome-client
-
