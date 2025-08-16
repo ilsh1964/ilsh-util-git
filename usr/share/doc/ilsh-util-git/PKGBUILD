@@ -1,7 +1,7 @@
 # Maintainer: Ilan Shavit <ilan.shavit@gmail.com>
 pkgname=ilsh-util-git
 pkgver=1
-pkgrel=1
+pkgrel=2
 pkgdesc="Config files for my common utils"
 arch=('any')
 url="https://github.com/ilsh1964/ilsh-util-git"
