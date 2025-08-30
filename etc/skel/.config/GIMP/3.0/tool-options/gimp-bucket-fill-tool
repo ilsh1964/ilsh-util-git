@@ -1,0 +1,11 @@
+# GIMP gimp-bucket-fill-tool options
+
+(foreground
+    (color "HSVA float" 16 "\371\332\221\75k\73v\77\316\237q\77\0\0\200\77" 0))
+(background
+    (color "R'G'B'A u8" 4 "\215\174\140\377" 0))
+(pattern "Pine")
+(brush-size 51)
+(brush-hardness 0.5)
+
+# end of gimp-bucket-fill-tool options

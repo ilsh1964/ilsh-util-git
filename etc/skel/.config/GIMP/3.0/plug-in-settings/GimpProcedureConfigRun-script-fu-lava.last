@@ -1,0 +1,11 @@
+# settings
+
+(adjustment 10)
+(adjustment-2 10)
+(adjustment-3 7)
+(gradient "GimpGradient" "Incandescent" "${gimp_data_dir}/gradients/Incandescent.ggr")
+(toggle yes)
+(toggle-2 yes)
+(toggle-3 no)
+
+# end of settings
