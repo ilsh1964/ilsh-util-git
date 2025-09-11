@@ -40,6 +40,11 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Programming Language :: Python :: 3.14',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Text Editors :: Integrated Development Environments (IDE)',
         'Topic :: Utilities',
@@ -47,12 +52,16 @@ setup(
     ],
     extras_require={
         'testing': [
-            'pytest<6.0.0',
+            'pytest',
             'docopt',
         ],
         'qa': [
-            'flake8==3.8.3',
-            'mypy==0.782',
+            # Latest version which supports Python 3.6
+            'flake8==5.0.4',
+            # Latest version which supports Python 3.6
+            'mypy==0.971',
+            # Arbitrary pins, latest at the time of pinning
+            'types-setuptools==67.2.0.1',
         ],
     },
 )

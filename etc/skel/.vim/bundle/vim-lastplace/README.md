@@ -1,16 +1,18 @@
-# vim-lastplace v4.0.0
+# vim-lastplace v4.6.0
 
 A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
 ## Features
+* Immediately jump to the last edit position when editing a file.
 * Commit Messages
     - Many version control systems re-use the same file for commit message editing.
-    - vim-lastplace treats each commit message as if it were a new file.
+    - It does not make sense in this case to jump to the last edit position.
+    - vim-lastplace automatically detects this and starts with your cursor at the beginning of the file.
 * Maximize Context
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
 * Opens folds if the last edit position is inside a fold.
-* Works properly with new file templates and scripts that jump to a specific line in them.
+* Works properly with new file templates and scripts that jump to a specific line.
 
 ## Install
 
@@ -38,7 +40,7 @@ This is a comma separated list.
 By default it is set to:
 
 ```vim
-    let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn,xxd"
 ````
 
 You can configure buffer types to ignore by setting g:lastplace_ignore_buftype in your vimrc.
@@ -46,7 +48,7 @@ This is a comma separated list.
 By default it is set to:
 
 ```vim
-    let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+    let g:lastplace_ignore_buftype = "help,nofile,quickfix"
 ```
 
 Closed folds are automatically opened when jumping to the last edit position.
@@ -68,7 +70,17 @@ If you do find a bug, please submit a pull request that fixes whatever problem y
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
-### 4.0.0
+### 4.6.0
+- Release Date: tbd
+- Restore column correctly when jumping to the end of a file. (Issue [#35](https://github.com/farmergreg/vim-lastplace/pull/35))
+
+### 4.5.0
+- Release Date: 2024-04-23
+- Improve README.md
+- Add xxd to g:lastplace_ignore
+- Alphabetize g:lastplace_ignore and g:lastplace_ignore_buftype
+
+### 4.4.0
 - Release Date: 2023-08-24
 - Use [keepjumps](https://github.com/farmergreg/vim-lastplace/pull/31) to prevent the addition of unwanted marks.
 - Fix a bug with folds not opening. (Issue [#30](https://github.com/farmergreg/vim-lastplace/issues/30))
