@@ -12,6 +12,9 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 
+" Gruvbox Theme
+Plugin 'morhetz/gruvbox'
+
 " Supertab plugin (press TAB will give suggestions...)
 Plugin 'ervandew/supertab'
 
@@ -216,4 +219,6 @@ ab ol <OL></OL>
 ab li <LI></LI>
 ab mail ilan.shavit@gmail.com
 
-colorscheme pablo
+colorscheme gruvbox
+set background=dark
+
