@@ -1,5 +1,3 @@
-" VIMRC                    VER: 6.1 (2023-10-31) "
-" ================================================
 " VUNDLE PLUGIN
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -14,6 +12,9 @@ Plugin 'L9'
 
 " Gruvbox Theme
 Plugin 'morhetz/gruvbox'
+
+" Nord Theme
+Plugin 'arcticicestudio/nord-vim'
 
 " Supertab plugin (press TAB will give suggestions...)
 Plugin 'ervandew/supertab'
@@ -54,9 +55,6 @@ Plugin 'tpope/vim-surround'
 
 " Last Place
 Plugin 'farmergreg/vim-lastplace'
-
-" OneDark Theme
-Plugin 'joshdick/onedark.vim'
 
 " T-Comment
 Plugin 'tomtom/tcomment_vim'
@@ -219,6 +217,6 @@ ab ol <OL></OL>
 ab li <LI></LI>
 ab mail ilan.shavit@gmail.com
 
-colorscheme gruvbox
-set background=dark
+colorscheme nord
+" set background=dark   <=use it only on gruvbox
 
